@@ -68,3 +68,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 
 {"id":1001,"amount":25000,"currency":"ISK","status":"Pending"}
+
+Dæmi um hvernig hægt er að leita í postgres töflunum að data:
+'SELECT * FROM "Transactions";' | docker exec -i integrationlab-postgres psql -U integrationlab -d integrationlab
